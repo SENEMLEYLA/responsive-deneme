@@ -1,0 +1,51 @@
+*{ box-sizing: border-box;}
+row::after{
+content: "";
+clear  : both;
+display: block;
+}
+html{
+    font-size: 15px;
+}
+[class*="col-"]
+{
+    float: left;
+    padding: 15px;
+}
+.başlık{
+    background-color: blueviolet;
+    color: white;
+    padding: 15px;
+}
+ul {list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+li{ padding: 10px;
+    color: rgb(246, 247, 248);
+    margin-bottom: 12px;
+    background-color: rgb(24, 153, 245);
+    box-shadow: 0 5px 8px rgb(163, 159, 159) ;
+    text-align: center;
+    text-decoration: none;
+
+}
+.sonpart{
+    background-color: rgb(216, 97, 97);
+    padding: 14px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    
+}
+.col-3{
+    width: 25%;
+}
+.col-6{width: 50%;}
+@media  only screen and (max-width: 768px) {
+    [clas*="col-"]{
+        width: 100%;
+    }
+}
+
+    
